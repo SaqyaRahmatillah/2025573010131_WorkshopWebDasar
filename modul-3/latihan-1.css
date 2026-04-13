@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* ================= BUTTON ================= */
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Variasi Button */
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+/* Hover Effect */
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ================= BADGE ================= */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.badge-success {
+  background-color: #2ecc71;
+}
+
+.badge-warning {
+  background-color: #f1c40f;
+}
+
+.badge-error {
+  background-color: #e74c3c;
+}
+
+/* ================= ALERT ================= */
+.alert {
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  color: white;
+}
+
+.alert-success {
+  background-color: #2ecc71;
+}
+
+.alert-warning {
+  background-color: #f1c40f;
+  color: black;
+}
+
+.alert-error {
+  background-color: #e74c3c;
+}

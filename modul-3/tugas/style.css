@@ -1,0 +1,140 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(to right, #6a0dad, #9b59b6);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #4b0082;
+  color: #ffd700;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #ffd700;
+  padding: 10px;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  background: #4b0082;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+/* Section */
+section {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul section */
+section h2 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+/* Foto profil */
+#tentang img {
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+  border: 4px solid #ffd700;
+}
+
+/* List */
+ul,
+ol {
+  margin-left: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6a0dad;
+}
+
+/* Button */
+button {
+  background: #6a0dad;
+  color: #ffd700;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffd700;
+  color: #4b0082;
+}
+
+/* Footer */
+footer {
+  background: #4b0082;
+  color: #ffd700;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Link footer */
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
