@@ -3,42 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <title>Menu Restoran</title>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Poppins", sans-serif;
         margin: 0;
+        background-color: #f9f9f9;
       }
-      header,
-      nav,
-      footer {
-        background-color: #f73281;
+
+      header {
+        background: linear-gradient(135deg, #f73281, #ff8fb1);
         color: white;
-        padding: 15px;
+        padding: 50px 20px;
         text-align: center;
       }
+
+      nav {
+        background-color: #f73281;
+        padding: 15px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+      }
+
       nav a {
-        margin: 0 10px;
+        margin: 0 15px;
         color: white;
         text-decoration: none;
         font-weight: bold;
+        transition: 0.3s;
       }
+
+      nav a:hover {
+        color: yellow;
+        border-bottom: 2px solid yellow;
+      }
+
       main {
-        padding: 20px;
+        padding: 30px;
       }
+
       section {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
       }
+
+      section h2 {
+        width: 100%;
+        border-left: 5px solid #f73281;
+        padding-left: 10px;
+      }
+
       article {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin: 10px 0;
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
       }
-      img {
-        width: 150px;
-        height: auto;
+
+      article:hover {
+        transform: translateY(-5px);
+      }
+
+      article img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      footer {
+        background-color: #f73281;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer a {
+        color: yellow;
+        text-decoration: none;
       }
     </style>
   </head>
+
   <body>
     <header>
       <h1>Saqya Cafe And Resto</h1>
@@ -71,7 +126,7 @@
           <img
             src="https://thumbs.dreamstime.com/b/spicy-korean-noodle-dish-close-up-view-bowl-spicy-korean-ramen-noodles-eggs-green-onions-other-toppings-331973114.jpg"
           />
-          <p>Mie pedas ala Korea dengan topping telur dan keju leleh.</p>
+          <p>Mie pedas ala Korea dengan topping telur dan topokki.</p>
           <p>Harga: Rp22.000</p>
         </article>
 
@@ -151,7 +206,7 @@
             src="https://img.freepik.com/premium-photo/oreo-cookie-ice-cream_753066-3941.jpg?w=2000"
             alt="Ice cream oreo sundae"
           />
-          <p>Es krim vanilla dengan topping oreo dan coklat.</p>
+          <p>Es krim vanilla dengan topping oreo.</p>
           <p>Harga: Rp17.000</p>
         </article>
       </section>
@@ -160,9 +215,7 @@
     <footer>
       <p>Jam Buka: 08.00 - 22.00</p>
       <p>Alamat: Jl. Medan-Banda Aceh, Syamtalira Bayu No.20</p>
-      <p>
-        Telepon: <a href="tel:08123456789" style="color: white">085202202306</a>
-      </p>
+      <p>Telepon: <a href="tel:08123456789">085202202306</a></p>
     </footer>
   </body>
 </html>
