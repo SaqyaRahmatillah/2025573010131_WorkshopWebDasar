@@ -1,0 +1,136 @@
+/* CSS VARIABLES */
+:root {
+  --primary: #ec4899;
+  --bg: #f3f4f6;
+  --dark: #1f2937;
+  --white: #ffffff;
+  --spacing: 20px;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+}
+
+/* NAVBAR (Flexbox) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeIn 1s ease;
+}
+
+.hero button {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* GRID (WAJIB) */
+.grid {
+  display: grid;
+  gap: var(--spacing);
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: var(--spacing);
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* SECTION */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* TESTIMONI */
+.testimoni {
+  text-align: center;
+  padding: 40px;
+  background: #ffe4e6;
+}
+
+/* FOOTER GRID */
+.footer {
+  background: var(--dark);
+  color: white;
+  padding: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* PSEUDO ELEMENT */
+.logo::after {
+  content: "✨";
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================= */
+/* RESPONSIVE */
+/* ================= */
+
+/* TABLET ≥768px */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP ≥1024px */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
