@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div class="flex justify-between items-center px-6 py-4">
+        <h1 class="text-xl font-bold">MySite</h1>
+
+        <!-- Hamburger -->
+        <button class="md:hidden text-2xl">☰</button>
+
+        <nav class="hidden md:flex gap-6">
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <!-- Dark mode toggle -->
+        <button id="darkToggle" class="btn-primary">🌙</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="section text-center">
+      <h2 class="text-4xl font-bold mb-4 animate-bounce">Welcome</h2>
+      <p class="mb-6">Landing page modern dengan Tailwind CSS</p>
+      <button class="btn-primary animate-pulse">Get Started</button>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <h2 class="text-2xl font-bold mb-8 text-center">Features</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 6 CARD -->
+        <div class="card">Feature 1</div>
+        <div class="card">Feature 2</div>
+        <div class="card">Feature 3</div>
+        <div class="card">Feature 4</div>
+        <div class="card">Feature 5</div>
+        <div class="card">Feature 6</div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section bg-gray-200 dark:bg-gray-700">
+      <h2 class="text-2xl font-bold mb-6 text-center">Testimonial</h2>
+      <p class="text-center italic">"Website ini sangat bagus!"</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <h2 class="text-2xl font-bold mb-6 text-center">Contact</h2>
+
+      <form class="max-w-md mx-auto flex flex-col gap-4">
+        <input type="text" placeholder="Nama" class="p-3 rounded border" />
+        <input type="email" placeholder="Email" class="p-3 rounded border" />
+        <textarea placeholder="Pesan" class="p-3 rounded border"></textarea>
+        <button class="btn-primary">Kirim</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 bg-gray-300 dark:bg-gray-800">
+      <p>© 2026 MySite</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

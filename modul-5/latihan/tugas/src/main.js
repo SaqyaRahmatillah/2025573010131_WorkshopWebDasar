@@ -1,11 +1,10 @@
 const toggle = document.getElementById("darkToggle");
 
-// Load theme dari localStorage
+// load preference
 if (localStorage.getItem("theme") === "dark") {
   document.documentElement.classList.add("dark");
 }
 
-// Toggle dark mode
 toggle.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark");
 

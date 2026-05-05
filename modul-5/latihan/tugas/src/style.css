@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Komponen reusable pakai @apply */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-xl font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply btn bg-purple-600 text-white hover:bg-purple-700;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow p-5 transition hover:scale-105;
+  }
+
+  .section {
+    @apply py-16 px-6 md:px-12 lg:px-20;
+  }
+}
